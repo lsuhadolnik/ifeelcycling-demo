@@ -1,0 +1,74 @@
+@font-face {
+    font-family: DIN;
+    src: url(DINPro-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: DIN;
+    src: url(DINPro-Light.ttf);
+    font-weight: lighter;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: DIN;
+}
+
+.logo-image-bg {
+    background: url('logo-inv.png');
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: url('bg-bw.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: rgba(0,0,0,0.8);
+    filter: grayscale(1);
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+
+    transition: .2s background-color;
+    text-align: center;
+
+    -webkit-user-select: none;
+}
+
+.column-hover {
+    cursor: pointer;
+}
+
+.column-hover:active {
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
+}
+
+.column-text-light {
+    font-weight: lighter;
+}
+
+.column-hover:hover {
+    background: rgba(0,0,0,0.3);
+}
